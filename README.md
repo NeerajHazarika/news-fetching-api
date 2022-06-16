@@ -24,7 +24,7 @@ This program is made for screening task of dendrite ai by Neeraj Pratap Hazarika
 # steps to fetch news
 
 - open browser or postman
-- in browser write "http://localhost:5000?tickerInput=msft" along with ticker input query (eg : msft = microsoft)
+- in browser write "http://localhost:5000/fetchNews?tickerInput=msft" along with ticker input query (eg : msft = microsoft)
 - open a new terminal and enter command `redis-cli` to access redis database
 - enter command `KEYS '*'` to get a list of all the keys in the database
 - enter `smembers "msft"` (example) to get list of 8 news article of that particular stock from NASDAQ RSS news feed
@@ -43,3 +43,9 @@ This program is made for screening task of dendrite ai by Neeraj Pratap Hazarika
 - add time stamps along with news article (will try this now and update the code once i do complete it)
 - task added to queue are in the same reddis cache as key-value of pair ticker input and it's news article (should I seperate it?)
 - query made through api can be made more dynamic by allowing users to query number of articles along with ticker input
+
+# SCREENSHOTS
+
+![Screenshot 2022-06-16 222225](https://user-images.githubusercontent.com/72177954/174124992-329f779e-d41c-4852-b5b3-fb0a636fc447.jpg)
+
+![Screenshot 2022-06-16 222131](https://user-images.githubusercontent.com/72177954/174124819-b415f7b3-a5a1-4aca-ab21-0ff033684d60.jpg)
